@@ -1,16 +1,18 @@
 Instructions for final project:
 
-The main objective of this project is to plot a set of points, with two sets of data needed for the x and y axis
-The data entered into the x and y input boxes must have square brackets, and can either use spaces or commas between each data piece. Each array
+Based on the final project file introduction, I don't need LA approval for the default option? Anyway...
+
+The main objective of this project is to plot a set of points, with two sets of data needed for the x and y axis.
+The data entered into the x and y input boxes must be surrounded by square brackets, and can either use spaces or commas between each data piece. Each array
 must have the same amount of numbers added, as each coordinate needs to have 2 sets of data. If any of the numbers are
-non-numerical or dont have the same amount of numbers added, an error box will pop up telling the user.  After putting the arrays into the boxes, click PLOT to plot the data. There is 
-also a RESET button to reset the graph and all other edit boxes. There is also an x-axis label, y-axis label, and a plot title that you can write what you want.
+non-numerical or don't have the same amount of numbers added, an error box will pop up telling the user.  After putting the arrays into the boxes, click PLOT to plot the data. There is 
+also a RESET button to reset the graph and all other edit boxes. There is an x-axis label, y-axis label, and a plot title that you can write what you want.
 This data can just be entered into the edit boxes, no buttons to press. The LINE and COLOR buttons open up a button menu 
-on the left side that allows the user to change between different graphing properties. After choosing the color you want, click plot for it to show up on the graph. The current graphing type will be displayed
-right next to their respective buttons, with straight and red as the default optionS. The option you choose will remain after the reset button. The X-axis limits and y-axis limits are just under the y-axis label. Data in these 
+on the left side that allows the user to change between different graphing properties. After choosing the color you want, click plot button for it to show up on the graph. The current  graphing type will be displayed
+right next to their respective buttons, with straight and red as the default options. The option you choose will return to the default red and straight after clicking the reset button. The x-axis limits and y-axis limits are just under the y-axis label. Data in these 
 edit boxes must be a single number, no square brackets or anything else. If either the y limit or x limit isn't completed or has a letter,
 it will display an error message. You can leave either the x lim or y lim empty without getting an error message(so you have the
-option to change the limit of one axis at a time without getting an error message). The min value must be less than the max value,
+option to change the limit of one axis at a time without getting an error message for the other). The min value must be less than the max value,
 or you'll get another error message. Click the "limits" to plot each axis limit. When plotting normally, the graph will automatically
 place limits for the data, so the limit boxes are good if you want to zoom out more or zoom in on a specific spot.
 
