@@ -44,10 +44,10 @@ function [] = finalProject(source,event)
         t = str2num(t);
         s = gui.yInput.String;
         s = str2num(s);                         % s and t are the x and y coordinates in an array
-        i = gui.line;
+        i = gui.line;                           % the i and j values are for the properties of the line/color
         j = gui.color;
             if length(t) == length(s)           % makes sure same amount of x and y coordinates
-                if i == '-' && j == 'r'
+                if i == '-' && j == 'r'         % an if/else block for every combination of the color/line properties 
                     plot(t,s,'-r')
                 elseif i == '-' && j == 'b'
                     plot(t,s,'-b')
@@ -135,7 +135,7 @@ function [] = green(source,event)
 end
     function [] = LimitBox(source,event)            %function that sets the limits
         zx = gui.xMinBox.String;
-        zx = str2num(zx);                           %turns the inputs into strings
+        zx = str2num(zx);                           %turns the inputs entered into strings
         Kx = gui.xMaxBox.String;
         Kx = str2num(Kx);
         zy = gui.yMinBox.String;
@@ -144,20 +144,20 @@ end
         Ky = str2num(Ky);
         if (isempty(zx) == 1 || isempty(Kx) == 1) && (isempty(zy) == 1 || isempty(Ky) == 1)         %detects if there is one empty box in both the x and y axis limit
             msgbox('Must Not Leave Boxes Empty Or Use Letters', 'Input Error', 'error', 'modal')    
-        elseif (isempty(zy) == 0 && isempty(Ky) == 1)||(isempty(zx) == 0 && isempty(Kx) == 1)
+        elseif (isempty(zy) == 0 && isempty(Ky) == 1)||(isempty(zx) == 0 && isempty(Kx) == 1)       % detects if there is a letter on only one of the sides
             msgbox('One of the Boxes are Empty Or Use Letters', 'Input Error', 'error', 'modal')
         elseif isempty(zy) == 1 && isempty(Ky) == 0 ||(isempty(zx) == 1 && isempty(Kx) == 0)
             msgbox('One of the Boxes are Empty Or Use Letters', 'Input Error', 'error', 'modal')
         else
-            if isempty(zx) == 0 && isempty(Kx) == 0                             %detects if either of the boxes is empty
+            if isempty(zx) == 0 && isempty(Kx) == 0                             %detects that both of the boxes are full
             if Kx < zx                                                          %makes sure the limiting numbers are increasing
             msgbox('Numbers must increase', 'Input Error', 'error', 'modal')   
             else
-            xlim([zx Kx]); 
+            xlim([zx Kx]);                                                      %limits the x axis
             end
             else                                                                %if they're both empty, wont do anything
             end
-            if isempty(zy) == 0 && isempty(Ky) == 0
+            if isempty(zy) == 0 && isempty(Ky) == 0                             
             if Ky < zy
             msgbox('Numbers must increase', 'Input Error', 'error', 'modal')   
             else
