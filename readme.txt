@@ -1,9 +1,9 @@
 Instructions for final project:
 
-Based on the final project file introduction, I don't need LA approval for the default option? Anyway...
+Based on the final project file introduction, I don't think I need LA approval for the default option on the second page? Anyway...
 
 The main objective of this project is to plot a set of points, with two sets of data needed for the x and y axis.
-The data entered into the x and y input boxes must be surrounded by square brackets, and can either use spaces or commas between each data piece. Each array
+The data entered into the x and y input boxes should be surrounded by square brackets, and can either use spaces or commas between each data piece. Each array
 must have the same amount of numbers added, as each coordinate needs to have 2 sets of data. If any of the numbers are
 non-numerical or don't have the same amount of numbers added, an error box will pop up telling the user.  After putting the arrays into the boxes, click PLOT to plot the data. There is 
 also a RESET button to reset the graph and all other edit boxes. There is an x-axis label, y-axis label, and a plot title that you can write what you want.
